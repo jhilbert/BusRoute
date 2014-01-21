@@ -54,6 +54,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="pml-Qe-CDa" id="2Ug-Iu-j9c"/>
+                        <outlet property="mySegmentedControl" destination="goN-75-s9T" id="lGE-dT-y3t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

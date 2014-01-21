@@ -16,6 +16,7 @@
     IBOutlet MKMapView *mapView;
     NSArray *stops;
     CLLocationCoordinate2D coordinate;
+    __weak IBOutlet UISegmentedControl *mySegmentedControl;
 
 }
 @end
@@ -25,6 +26,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [mySegmentedControl addTarget:self action:@selector(whichView) forControlEvents:UIControlEventValueChanged];
+    
     NSURL *url = [NSURL URLWithString:@"http://dev.mobilemakers.co/lib/bus.json"];
     
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -59,6 +63,14 @@
     MKCoordinateRegion region = MKCoordinateRegionMake(chicagoCoordinate, span);
     [mapView setRegion:region animated:YES];
     
+}
+
+-(void)whichView: (UISegmentedControl *)segmentedControl
+{
+    if ([segmentedControl isEqual:mySegmentedControl])
+    {
+  //      [
+    }
 }
 
 -(MKAnnotationView *)mapView:(MKMapView *)mV viewForAnnotation:(id<MKAnnotation>)annotation
