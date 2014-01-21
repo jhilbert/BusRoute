@@ -21,6 +21,9 @@
 		9A06BBC0188F04AF00A72DC7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A06BBA2188F04AF00A72DC7 /* UIKit.framework */; };
 		9A06BBC8188F04AF00A72DC7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A06BBC6188F04AF00A72DC7 /* InfoPlist.strings */; };
 		9A06BBCA188F04AF00A72DC7 /* BusRouteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A06BBC9188F04AF00A72DC7 /* BusRouteTests.m */; };
+		9A06BBD6188F075000A72DC7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A06BBD5188F075000A72DC7 /* MapKit.framework */; };
+		9A06BBD9188F197300A72DC7 /* StopDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A06BBD8188F197300A72DC7 /* StopDetailViewController.m */; };
+		9A06BBDC188F20A200A72DC7 /* BusPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A06BBDB188F20A200A72DC7 /* BusPointAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		9A06BBC5188F04AF00A72DC7 /* BusRouteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BusRouteTests-Info.plist"; sourceTree = "<group>"; };
 		9A06BBC7188F04AF00A72DC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9A06BBC9188F04AF00A72DC7 /* BusRouteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BusRouteTests.m; sourceTree = "<group>"; };
+		9A06BBD5188F075000A72DC7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9A06BBD7188F197300A72DC7 /* StopDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopDetailViewController.h; sourceTree = "<group>"; };
+		9A06BBD8188F197300A72DC7 /* StopDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopDetailViewController.m; sourceTree = "<group>"; };
+		9A06BBDA188F20A200A72DC7 /* BusPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusPointAnnotation.h; sourceTree = "<group>"; };
+		9A06BBDB188F20A200A72DC7 /* BusPointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusPointAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A06BBD6188F075000A72DC7 /* MapKit.framework in Frameworks */,
 				9A06BBA1188F04AF00A72DC7 /* CoreGraphics.framework in Frameworks */,
 				9A06BBA3188F04AF00A72DC7 /* UIKit.framework in Frameworks */,
 				9A06BB9F188F04AF00A72DC7 /* Foundation.framework in Frameworks */,
@@ -101,6 +110,7 @@
 		9A06BB9D188F04AF00A72DC7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A06BBD5188F075000A72DC7 /* MapKit.framework */,
 				9A06BB9E188F04AF00A72DC7 /* Foundation.framework */,
 				9A06BBA0188F04AF00A72DC7 /* CoreGraphics.framework */,
 				9A06BBA2188F04AF00A72DC7 /* UIKit.framework */,
@@ -115,8 +125,12 @@
 				9A06BBAD188F04AF00A72DC7 /* AppDelegate.h */,
 				9A06BBAE188F04AF00A72DC7 /* AppDelegate.m */,
 				9A06BBB0188F04AF00A72DC7 /* Main.storyboard */,
+				9A06BBD7188F197300A72DC7 /* StopDetailViewController.h */,
+				9A06BBD8188F197300A72DC7 /* StopDetailViewController.m */,
 				9A06BBB3188F04AF00A72DC7 /* ViewController.h */,
 				9A06BBB4188F04AF00A72DC7 /* ViewController.m */,
+				9A06BBDA188F20A200A72DC7 /* BusPointAnnotation.h */,
+				9A06BBDB188F20A200A72DC7 /* BusPointAnnotation.m */,
 				9A06BBB6188F04AF00A72DC7 /* Images.xcassets */,
 				9A06BBA5188F04AF00A72DC7 /* Supporting Files */,
 			);
@@ -250,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A06BBB5188F04AF00A72DC7 /* ViewController.m in Sources */,
+				9A06BBD9188F197300A72DC7 /* StopDetailViewController.m in Sources */,
+				9A06BBDC188F20A200A72DC7 /* BusPointAnnotation.m in Sources */,
 				9A06BBAF188F04AF00A72DC7 /* AppDelegate.m in Sources */,
 				9A06BBAB188F04AF00A72DC7 /* main.m in Sources */,
 			);
